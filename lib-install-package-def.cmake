@@ -1,3 +1,4 @@
+include(LibList.cmake)
 add_library(${TEST_LIB_NAME} SHARED IMPORTED)
 set_target_properties(${TEST_LIB_NAME} PROPERTIES
   IMPORTED_LOCATION "${CMAKE_CURRENT_LIST_DIR}/../lib/lib${TEST_LIB_NAME}.so"
