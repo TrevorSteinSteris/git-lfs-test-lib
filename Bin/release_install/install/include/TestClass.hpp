@@ -12,6 +12,7 @@ class TestClass
         TestClass &operator=( TestClass && ) = default;
 
         void print();
+        void printV2();
 };
 
 #endif // TESTCLASS_HPP
