@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c39407b33087fab421b9950f8e4f676e3bda533d14677f79bb2b070551e78edd
-size 400
+#ifndef TESTCLASS_HPP
+#define TESTCLASS_HPP
+
+class TestClass
+{
+    public:
+        TestClass() = default;
+        ~TestClass() = default;
+        TestClass( const TestClass & ) = default;
+        TestClass( TestClass && ) = default;
+        TestClass &operator=( const TestClass & ) = default;
+        TestClass &operator=( TestClass && ) = default;
+
+        void print();
+};
+
+#endif // TESTCLASS_HPP

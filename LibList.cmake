@@ -1,0 +1,1 @@
+set(TEST_LIB_NAME "test-lib")
